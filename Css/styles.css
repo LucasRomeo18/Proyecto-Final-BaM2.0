@@ -12,22 +12,41 @@ html {
 
 /* CONFIGURACION GLOBALES */
 
-.fondo{
-    background-color: aqua;
-    position: absolute;    
-}
 
+/* Propiedades de la Navbar */
 .estilo{
-    color: #FFFFFF;
+    display: flex;
+    list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #00FFCA;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 300;
     font-size: 26.0163px;
-    line-height: 32px;
+    justify-content: center;
+}
+
+.estilo li{
+    float: left;
+    margin: 1rem;
+}
+
+li a{
+    display: block;
+	color: #0A4D68;
+	text-align: center;
+	text-decoration: none;
+}
+
+li a:hover {
+    background-color: black;
 }
 
 
 
+/* Titulo Principal */
 .nombre{
     position: absolute;
     width: 843px;
@@ -68,107 +87,4 @@ html {
     font-size: 5.6rem;
     line-height: 68px;
     color: #FFFFFF;
-}
-
-.flecha1{
-    position: absolute;
-    width: 15.25px;
-    height: 22.11px;
-    left: 823.41px;
-    top: 63.74px;
-}
-.pagina1{
-    position: absolute;
-    width: 114px;
-    height: 32px;
-    left: 846.83px;
-    top: 61.14px;    
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 26.0163px;
-    line-height: 32px;
-    color: #FFFFFF;
-}
-
-.flecha2{
-    position: absolute;
-    width: 15.25px;
-    height: 22.11px;
-    left: 988.62px;
-    top: 63.74px;
-}
-
-.pagina2{
-    position: absolute;
-    width: 111px;
-    height: 32px;
-    left: 1012.03px;
-    top: 61.14px;    
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 26.0163px;
-    line-height: 32px;
-    color: #FFFFFF;
-
-}
-
-.flecha3{
-    position: absolute;
-    width: 15.25px;
-    height: 22.11px;
-    left: 1149.92px;
-    top: 63.74px;
-}
-
-.pagina3{
-    position: absolute;
-    width: 150px;
-    height: 32px;
-    left: 1173.33px;
-    top: 61.14px;    
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 26.0163px;
-    line-height: 32px;
-    color: #FFFFFF;
-}
-
-.flecha4{
-    position: absolute;
-    width: 15.25px;
-    height: 22.11px;
-    left: 1345.04px;
-    top: 63.74px;
-}
-.pagina4{
-    position: absolute;
-    width: 153px;
-    height: 32px;
-    left: 1368.46px;
-    top: 61.14px;    
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 26.0163px;
-    line-height: 32px;
-    color: #FFFFFF;
-}
-
-/* Lucas Daniel Romeo */
-
-.home{
-position: absolute;
-width: 407px;
-height: 48px;
-left: 278.37px;
-top: 50.73px;
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 500;
-font-size: 39.0244px;
-line-height: 48px;
-color: #FFFFFF;
 }
