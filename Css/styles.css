@@ -47,18 +47,21 @@ li a:hover {
 
 
 /* Titulo Principal */
+
+.estiloPrin{
+    font-family: 'Montserrat';
+    color: #FFFFFF;
+}
 .nombre{
     position: absolute;
     width: 843px;
     height: 159px;
     left: 187.32px;
-    top: 316.1px;    
-    font-family: 'Montserrat';
+    top: 316.1px;
     font-style: normal;
     font-weight: 500;
     font-size: 13rem;
     line-height: 159px;
-    color: #FFFFFF;
 }
 
 .apellido{
@@ -66,13 +69,11 @@ li a:hover {
     width: 858px;
     height: 277px;
     left: 182.11px;
-    top: 411.06px;    
-    font-family: 'Montserrat';
+    top: 411.06px;
     font-style: normal;
     font-weight: 800;
     font-size: 22.7rem;
     line-height: 277px;
-    color: #FFFFFF;
 }
 
 .titulo{
@@ -80,11 +81,9 @@ li a:hover {
     width: 827px;
     height: 68px;
     left: 200.33px;
-    top: 651.71px;    
-    font-family: 'Montserrat';
+    top: 651.71px;
     font-style: italic;
     font-weight: 400;
     font-size: 5.6rem;
     line-height: 68px;
-    color: #FFFFFF;
 }
