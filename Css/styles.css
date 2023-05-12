@@ -20,7 +20,7 @@ html {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: #00FFCA;
+    background-color: #0A4D68;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 300;
@@ -35,32 +35,37 @@ html {
 
 li a{
     display: block;
-	color: #0A4D68;
+	color: #FFFFFF;
 	text-align: center;
 	text-decoration: none;
 }
 
 li a:hover {
-    background-color: black;
+    background-color: #0cb0b6;
 }
 
 
 
-/* Titulo Principal */
+/* Tipografia general para todas las paginas */
 
 .estiloPrin{
     font-family: 'Montserrat';
     color: #FFFFFF;
 }
+
+/* Titulo Principal */
+
+
+
 .nombre{
     position: absolute;
     width: 843px;
     height: 159px;
     left: 187.32px;
-    top: 316.1px;
+    top: 200px;
     font-style: normal;
     font-weight: 500;
-    font-size: 13rem;
+    font-size: 9vw;
     line-height: 159px;
 }
 
@@ -69,10 +74,10 @@ li a:hover {
     width: 858px;
     height: 277px;
     left: 182.11px;
-    top: 411.06px;
+    top: 300px;
     font-style: normal;
     font-weight: 800;
-    font-size: 22.7rem;
+    font-size: 16vw;
     line-height: 277px;
 }
 
@@ -81,9 +86,198 @@ li a:hover {
     width: 827px;
     height: 68px;
     left: 200.33px;
-    top: 651.71px;
+    top: 540px;
     font-style: italic;
     font-weight: 400;
-    font-size: 5.6rem;
+    font-size: 4vw;
     line-height: 68px;
 }
+
+/* Estilos de la Pagina de Sobre Mi */
+
+/* Estilo de los titulos */
+.titulos{
+    font-style: normal;
+    font-weight: 600;
+    display: flex;
+    float: left;
+}
+
+.t1{
+    position: absolute;
+    width: 174px;
+    height: 48px;
+    left: 218.54px;
+    top: 183.41px;
+}
+
+.t2{
+    position: absolute;
+    width: 187px;
+    height: 48px;
+    left: 826.02px;
+    top: 183.41px;
+
+}
+
+.t3{
+    position: absolute;
+    width: 262px;
+    height: 48px;
+    left: 1443.9px;
+    top: 183.41px;
+}
+
+.t4{
+    position: absolute;
+    width: 261px;
+    height: 48px;
+    left: 824.11px;
+    top: 590.57px;
+
+}
+
+.t5{
+    position: absolute;
+    width: 255px;
+    height: 48px;
+    left: 1446.5px;
+    top: 591.87px;
+}
+
+
+/* Estilos de los textos */
+.texto{
+    font-style: italic;
+    font-weight: 300;
+}
+
+.uno{
+    position: absolute;
+    width: 366px;
+    height: 366px;
+    left: 184px;
+    top: 263px;;
+}
+
+.dos{
+    position: absolute;
+    width: 361px;
+    height: 208px;
+    left: 773px;
+    top: 263px;
+}
+
+.tres{
+    position: absolute;
+    width: 361px;
+    height: 208px;
+    left: 1403px;
+    top: 263px;
+}
+
+.cuatro{
+    position: absolute;
+    width: 361px;
+    height: 208px;
+    left: 773px;
+    top: 671px;
+}
+
+.cinco{
+    position: absolute;
+    width: 361px;
+    height: 208px;
+    left: 1403px;
+    top: 671px;
+}
+
+ /* @media screen and (max-width: 768px) { 
+    .nombre{ 
+        font-size: 6rem; 
+        position: absolute; 
+        width: 420px; 
+        height: 60px; 
+        left: 90px; 
+        top: 155px;
+    } 
+    
+    .apellido{ 
+        font-size: 11rem; 
+        position: absolute; 
+        width: 430px; 
+        height: 140px; 
+        left: 90px; 
+        top: 170px; 
+    } 
+    
+    .titulo{ 
+        font-size: 2.7rem; 
+        position: absolute; 
+        width: 415px; 
+        height: 34px; 
+        left: 97px; 
+        top: 340px; 
+    }
+
+    
+     .estilo{
+        display: flex;
+        list-style-type: none;
+	    margin: 0;
+	    padding: 0;
+	    overflow: hidden;
+        background-color: #0A4D68;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 2rem;
+        justify-content: center;
+    }
+
+    .estilo li{
+        float: left;
+        margin: 0.5rem;
+    }
+
+    li a{
+        display: block;
+	    color: #FFFFFF;
+	    text-align: center;
+	    text-decoration: none;
+    }
+
+    li a:hover {
+        background-color: #0cb0b6;
+    }
+
+}
+
+@media screen and (max-width: 375px) { 
+    .nombre{ 
+        font-size: 3.4rem; 
+        position: absolute; 
+        width: 420px; 
+        height: 60px; 
+        left: px; 
+        top: 155px; 
+    } 
+    
+    .apellido{ 
+        font-size: 6rem; 
+        position: absolute; 
+        width: 430px; 
+        height: 140px; 
+        left: 90px; 
+        top: 135px;
+    } 
+     
+     .titulo{ 
+        font-size: 1.5rem; 
+        position: absolute;
+        width: 415px;
+        height: 34px;
+        left: 93px;
+        top: 280px;
+    } 
+}   */
