@@ -24,7 +24,7 @@ html {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 300;
-    font-size: 26.0163px;
+    font-size: 2vw;
     justify-content: center;
 }
 
@@ -59,38 +59,35 @@ li a:hover {
 
 .nombre{
     position: absolute;
-    width: 843px;
+    width: 100vw;
     height: 159px;
-    left: 187.32px;
-    top: 200px;
+    left: 30vh;
+    top: 15vw;
     font-style: normal;
     font-weight: 500;
     font-size: 9vw;
-    line-height: 159px;
 }
 
 .apellido{
     position: absolute;
-    width: 858px;
+    width: 100vw;
     height: 277px;
-    left: 182.11px;
-    top: 300px;
+    left: 30vh;
+    top: 22vw;
     font-style: normal;
     font-weight: 800;
     font-size: 16vw;
-    line-height: 277px;
 }
 
 .titulo{
     position: absolute;
-    width: 827px;
+    width: 100vw;
     height: 68px;
-    left: 200.33px;
-    top: 540px;
+    left: 30vh;
+    top: 38vw;
     font-style: italic;
     font-weight: 400;
     font-size: 4vw;
-    line-height: 68px;
 }
 
 /* Estilos de la Pagina de Sobre Mi */
@@ -192,92 +189,3 @@ li a:hover {
     top: 671px;
 }
 
- /* @media screen and (max-width: 768px) { 
-    .nombre{ 
-        font-size: 6rem; 
-        position: absolute; 
-        width: 420px; 
-        height: 60px; 
-        left: 90px; 
-        top: 155px;
-    } 
-    
-    .apellido{ 
-        font-size: 11rem; 
-        position: absolute; 
-        width: 430px; 
-        height: 140px; 
-        left: 90px; 
-        top: 170px; 
-    } 
-    
-    .titulo{ 
-        font-size: 2.7rem; 
-        position: absolute; 
-        width: 415px; 
-        height: 34px; 
-        left: 97px; 
-        top: 340px; 
-    }
-
-    
-     .estilo{
-        display: flex;
-        list-style-type: none;
-	    margin: 0;
-	    padding: 0;
-	    overflow: hidden;
-        background-color: #0A4D68;
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 300;
-        font-size: 2rem;
-        justify-content: center;
-    }
-
-    .estilo li{
-        float: left;
-        margin: 0.5rem;
-    }
-
-    li a{
-        display: block;
-	    color: #FFFFFF;
-	    text-align: center;
-	    text-decoration: none;
-    }
-
-    li a:hover {
-        background-color: #0cb0b6;
-    }
-
-}
-
-@media screen and (max-width: 375px) { 
-    .nombre{ 
-        font-size: 3.4rem; 
-        position: absolute; 
-        width: 420px; 
-        height: 60px; 
-        left: px; 
-        top: 155px; 
-    } 
-    
-    .apellido{ 
-        font-size: 6rem; 
-        position: absolute; 
-        width: 430px; 
-        height: 140px; 
-        left: 90px; 
-        top: 135px;
-    } 
-     
-     .titulo{ 
-        font-size: 1.5rem; 
-        position: absolute;
-        width: 415px;
-        height: 34px;
-        left: 93px;
-        top: 280px;
-    } 
-}   */
