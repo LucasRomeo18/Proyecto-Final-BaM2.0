@@ -22,3 +22,4 @@ console.log("El nombre es "+nombre);
 console.log("El apellido es "+ apellido);
 console.log("La edad es "+ edad);
 console.log("Tiene mascota? " + tieneMascota);
+
