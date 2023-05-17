@@ -44,6 +44,11 @@ li a:hover {
     background-color: #0cb0b6;
 }
 
+.home{
+    font-style: normal;
+    font-weight: 600;
+}
+
 
 
 /* Tipografia general para todas las paginas */
@@ -51,6 +56,15 @@ li a:hover {
 .estiloPrin{
     font-family: 'Montserrat';
     color: #FFFFFF;
+}
+
+.lista{
+    list-style-type: none;
+    overflow: hidden;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background-color: #0A4D68;
 }
 
 /* Titulo Principal */
@@ -102,44 +116,44 @@ li a:hover {
 
 .t1{
     position: absolute;
-    width: 174px;
+    width: 100vw;
     height: 48px;
-    left: 218.54px;
-    top: 183.41px;
+    left: 20vh;
+    top: 18vh;
 }
 
 .t2{
     position: absolute;
-    width: 187px;
+    width: 100vw;
     height: 48px;
-    left: 826.02px;
-    top: 183.41px;
+    left: 82vh;
+    top: 18vh;
 
 }
 
 .t3{
     position: absolute;
-    width: 262px;
+    width: 100vw;
     height: 48px;
-    left: 1443.9px;
-    top: 183.41px;
+    left: 140vh;
+    top: 18vh;
 }
 
 .t4{
     position: absolute;
-    width: 261px;
+    width: 100vw;
     height: 48px;
-    left: 824.11px;
-    top: 590.57px;
+    left: 82vh;
+    top: 59vh;
 
 }
 
 .t5{
     position: absolute;
-    width: 255px;
+    width: 100vw;
     height: 48px;
-    left: 1446.5px;
-    top: 591.87px;
+    left: 140vh;
+    top: 59vh;
 }
 
 
@@ -147,46 +161,48 @@ li a:hover {
 .texto{
     font-style: italic;
     font-weight: 300;
+    font-size: 1vw;
+    overflow: hidden;
 }
 
 .uno{
     position: absolute;
-    width: 366px;
-    height: 366px;
-    left: 184px;
-    top: 263px;;
+    width: 300px;
+    height: 250px;
+    left: 18vh;
+    top: 26vh;
 }
 
 .dos{
     position: absolute;
-    width: 361px;
-    height: 208px;
-    left: 773px;
-    top: 263px;
+    width: 300px;
+    height: 200px;
+    left: 77vh;
+    top: 26vh;
 }
 
 .tres{
     position: absolute;
-    width: 361px;
-    height: 208px;
-    left: 1403px;
-    top: 263px;
+    width: 300px;
+    height: 200px;
+    left: 140vh;
+    top: 26vh;
 }
 
 .cuatro{
     position: absolute;
-    width: 361px;
-    height: 208px;
-    left: 773px;
-    top: 671px;
+    width: 300px;
+    height: 200px;
+    left: 77vh;
+    top: 67vh;
 }
 
 .cinco{
     position: absolute;
-    width: 361px;
-    height: 208px;
-    left: 1403px;
-    top: 671px;
+    width: 300px;
+    height: 200px;
+    left: 140vh;
+    top: 67vh;
 }
 
 .listaFondo{
@@ -196,4 +212,95 @@ li a:hover {
     margin: 2;
     padding: 2;
 
+}
+
+
+/* Estilos para Estudios */
+
+
+.años{
+    display: flex;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 4vh;
+
+}
+
+.años li{
+    position: relative;
+    float: left;
+    margin: 5rem;
+    background-color: #0cb0b6;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.años li::after {
+    content: '';
+    position: absolute;
+    width: calc(100% + 10rem);
+    height: 2vh;
+    background-color: #0cb0b6;
+    bottom: 50%;
+    left: 7rem;
+}
+
+.años li:nth-child(1){
+    position: absolute;
+    width: 12vh;
+    height: 12vh;
+    left: 6vw;
+    top: 51vh;
+}
+
+.años li:nth-child(2){
+    position: absolute;
+    width: 12vh;
+    height: 12vh;
+    left: 20vw;
+    top: 51vh;
+}
+
+.años li:nth-child(3){
+    position: absolute;
+    width: 12vh;
+    height: 12vh;
+    left: 30vw;
+    top: 51vh;
+}
+
+.años li:nth-child(4){
+    position: absolute;
+    width: 12vh;
+    height: 12vh;
+    left: 45vw;
+    top: 51vh;
+}
+
+.años li:nth-child(5){
+    position: absolute;
+    width: 12vh;
+    height: 12vh;
+    left: 60vw;
+    top: 51vh;
+}
+
+.años li:nth-child(6){
+    position: absolute;
+    width: 12vh;
+    height: 12vh;
+    left: 67vw;
+    top: 51vh;
+}
+
+.años li:nth-child(7){
+    position: absolute;
+    width: 12vh;
+    height: 12vh;
+    left: 74vw;
+    top: 51vh;
 }
