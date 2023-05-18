@@ -217,6 +217,7 @@ li a:hover {
 
 /* Estilos para Estudios */
 
+/* Linea de tiempo para experiencias tambien */
 
 .años{
     display: flex;
@@ -303,4 +304,208 @@ li a:hover {
     height: 12vh;
     left: 74vw;
     top: 51vh;
+}
+
+
+.p0 section:nth-child(1){
+    position: absolute;
+    width: 43vh;
+    height: 12vh;
+    left: 15vw;
+    top: 20vh;
+}
+
+.p0 section:nth-child(2){
+    position: absolute;
+    width: 43vh;
+    height: 12vh;
+    left: 50vw;
+    top: 20vh;
+}
+
+.p0 section:nth-child(3){
+    position: absolute;
+    width: 43vh;
+    height: 12vh;
+    left: 65vw;
+    top: 40vh;
+}
+
+.p0 section:nth-child(4){
+    position: absolute;
+    width: 43vh;
+    height: 12vh;
+    left: 25vw;
+    top: 40vh;
+}
+
+.p0 section:nth-child(5){
+    position: absolute;
+    width: 43vh;
+    height: 12vh;
+    left: 35vw;
+    top: 50vh;
+}
+
+
+
+/* Estilos de la pagina de experiencias */
+
+.p1{
+    display: flex;
+    float: left;
+}
+
+.p1 section:nth-child(1){
+    position: absolute;
+    width: 40vh;
+    height: 6vh;
+    left: 12vw;
+    top: 21vh;
+}
+
+.p1 section:nth-child(2){
+    position: absolute;
+    width: 40vh;
+    height: 6vh;
+    left: 27vw;
+    top: 40vh;
+}
+
+.p1 section:nth-child(3){
+    position: absolute;
+    width: 40vh;
+    height: 6vh;
+    left: 27vw;
+    top: 21vh;
+}
+
+.p1 section:nth-child(4){
+    position: absolute;
+    width: 40vh;
+    height: 6vh;
+    left: 37vw;
+    top: 75vh;
+}
+
+.p1 section:nth-child(5){
+    position: absolute;
+    width: 40vh;
+    height: 6vh;
+    left: 37vw;
+    top: 95vh;
+}
+
+.p1 section:nth-child(6){
+    position: absolute;
+    width: 40vh;
+    height: 6vh;
+    left: 67vw;
+    top: 21vh;
+}
+
+.p1 section:nth-child(7){
+    position: absolute;
+    width: 40vh;
+    height: 6vh;
+    left: 73vw;
+    top: 75vh;
+}
+
+/* Tamaño para los titulos de los texto en las paginas de experiencias y estudios */
+
+.titu{
+    font-size: 2.5vh;
+}
+
+/* Estilo para la pagina de habilidades */
+
+.posicion li:nth-child(1){
+    position: absolute;
+    left: 14.23%;
+    right: 82.7%;
+    top: 24.09%;
+    bottom: 70.45%;
+}
+
+.posicion li:nth-child(2){
+    position: absolute;
+    left: 31.37%;
+    right: 65.56%;
+    top: 23.85%;
+    bottom: 70.69%;
+}
+
+.posicion li:nth-child(3){
+    position: absolute;
+    left: 48.78%;
+    right: 48.15%;
+    top: 23.49%;
+    bottom: 71.05%;
+}
+
+.posicion li:nth-child(4){
+    position: absolute;
+    left: 66.06%;
+    right: 30.87%;
+    top: 23.49%;
+    bottom: 71.05%;
+}
+
+.posicion li:nth-child(5){
+    position: absolute;
+    left: 83.33%;
+    right: 13.6%;
+    top: 22.76%;
+    bottom: 71.78%;
+}
+
+.posicion li:nth-child(6){
+    position: absolute;
+    left: 14.23%;
+    right: 82.7%;
+    top: 50.59%;
+    bottom: 43.95%;
+}
+
+.posicion li:nth-child(7){
+    position: absolute;
+    left: 31%;
+    right: 82.7%;
+    top: 50.59%;
+    bottom: 43.95%;
+}
+
+.posicion li:nth-child(8){
+    position: absolute;
+    left: 48.5%;
+    right: 82.7%;
+    top: 50.59%;
+    bottom: 43.95%;
+}
+
+.posicion li:nth-child(9){
+    position: absolute;
+    left: 66%;
+    right: 82.7%;
+    top: 50.59%;
+    bottom: 43.95%;
+}
+
+.posicion li:nth-child(10){
+    position: absolute;
+    left: 83.5%;
+    right: 82.7%;
+    top: 50.59%;
+    bottom: 43.95%;
+}
+
+.prueba{
+    background: #0cb0b6;
+    border-radius: 50%;
+    width: 10vw;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
