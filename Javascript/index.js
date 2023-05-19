@@ -12,6 +12,15 @@
 // console.log(variable3)
 
 
+const hamburger = document.querySelector(".menu")
+const navMenu = document.querySelector(".estilo")
+
+hamburger.addEventListener("click", () =>{
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+})
+
+
 let nombre = "Lucas";
 let apellido = "Romeo";
 let edad = 33;

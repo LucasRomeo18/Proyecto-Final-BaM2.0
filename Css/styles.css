@@ -49,6 +49,60 @@ li a:hover {
     font-weight: 600;
 }
 
+.menu{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto; 
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #FFFFFF;
+}
+
+@media(max-width: 768px){
+    .menu{
+        display: block;
+    }
+
+    .menu.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .menu.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .menu.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .estilo{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #0A4D68;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .li a{
+        margin: 16px 0;
+    }
+
+    .estilo.active{
+        left: 0;
+    }
+
+}
+
 
 
 /* Tipografia general para todas las paginas */
@@ -73,10 +127,9 @@ li a:hover {
 
 .nombre{
     position: absolute;
-    width: 100vw;
-    height: 159px;
-    left: 30vh;
-    top: 15vw;
+    width: auto;
+    left: 15%;
+    top: 10%;
     font-style: normal;
     font-weight: 500;
     font-size: 9vw;
@@ -84,10 +137,9 @@ li a:hover {
 
 .apellido{
     position: absolute;
-    width: 100vw;
-    height: 277px;
-    left: 30vh;
-    top: 22vw;
+    width: auto;
+    left: 15%;
+    top: 22%;
     font-style: normal;
     font-weight: 800;
     font-size: 16vw;
@@ -95,10 +147,9 @@ li a:hover {
 
 .titulo{
     position: absolute;
-    width: 100vw;
-    height: 68px;
-    left: 30vh;
-    top: 38vw;
+    width: auto;
+    left: 15.7%;
+    top: 57%;
     font-style: italic;
     font-weight: 400;
     font-size: 4vw;
@@ -517,4 +568,16 @@ li a:hover {
     border-radius: 20%;
     background-color: #0A4D68;
 
+}
+
+.redes{
+    display: flex;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    background: #0A4D68;
+    width: 100%;
+    height: 20vh;
+    position: absolute;
+    bottom: 0;
 }
