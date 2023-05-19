@@ -13,7 +13,7 @@ html {
 .area{ 
     background: -webkit-linear-gradient(180deg, #0A4D68 0%, #0A4D68 0.01%, #096371 97.22%);
     width: 100%;
-    height:100vh;
+    height: 80%;
     position: absolute;
     z-index: -1;
     
@@ -38,7 +38,6 @@ html {
     background: rgba(255, 255, 255, 0.2);
     animation: animate 25s linear infinite;
     bottom: -150px;
-    
 }
 
 .circles li:nth-child(1){
