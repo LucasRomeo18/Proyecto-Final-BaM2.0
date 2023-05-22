@@ -49,59 +49,8 @@ li a:hover {
     font-weight: 600;
 }
 
-.menu{
-    display: none;
-    cursor: pointer;
-}
 
-.bar{
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto; 
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: #FFFFFF;
-}
 
-@media(max-width: 768px){
-    .menu{
-        display: block;
-    }
-
-    .menu.active .bar:nth-child(2){
-        opacity: 0;
-    }
-
-    .menu.active .bar:nth-child(1){
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .menu.active .bar:nth-child(3){
-        transform: translateY(-8px) rotate(-45deg);
-    }
-
-    .estilo{
-        position: fixed;
-        left: -100%;
-        top: 70px;
-        gap: 0;
-        flex-direction: column;
-        background-color: #0A4D68;
-        width: 100%;
-        text-align: center;
-        transition: 0.3s;
-    }
-
-    .li a{
-        margin: 16px 0;
-    }
-
-    .estilo.active{
-        left: 0;
-    }
-
-}
 
 
 
@@ -155,6 +104,45 @@ li a:hover {
     font-size: 4vw;
 }
 
+/* Para telefonos */
+
+@media screen and (max-width: 600px){
+    .apellido{
+        top: 13%;
+    }
+
+    .titulo{
+        top: 22%;
+    }
+    
+}
+
+/* Para tablets */
+
+@media screen and (max-width: 900px){
+    .apellido{
+        top: 15%;
+    }
+
+    .titulo{
+        top: 27%;
+    }
+    
+}
+
+/* Para tablets en modo horizontal */
+
+@media screen and (max-width: 1200px){
+    .apellido{
+        top: 18%;
+    }
+
+    .titulo{
+        top: 40%;
+    }
+    
+}
+
 /* Estilos de la Pagina de Sobre Mi */
 
 /* Estilo de los titulos */
@@ -167,7 +155,7 @@ li a:hover {
 
 .t1{
     position: absolute;
-    width: 100vw;
+    width: auto;
     height: 48px;
     left: 20vh;
     top: 18vh;
@@ -175,7 +163,7 @@ li a:hover {
 
 .t2{
     position: absolute;
-    width: 100vw;
+    width: auto;
     height: 48px;
     left: 82vh;
     top: 18vh;
@@ -184,7 +172,7 @@ li a:hover {
 
 .t3{
     position: absolute;
-    width: 100vw;
+    width: auto;
     height: 48px;
     left: 140vh;
     top: 18vh;
@@ -192,7 +180,7 @@ li a:hover {
 
 .t4{
     position: absolute;
-    width: 100vw;
+    width: auto;
     height: 48px;
     left: 82vh;
     top: 59vh;
@@ -201,7 +189,7 @@ li a:hover {
 
 .t5{
     position: absolute;
-    width: 100vw;
+    width: auto;
     height: 48px;
     left: 140vh;
     top: 59vh;
@@ -265,6 +253,35 @@ li a:hover {
 
 }
 
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    .titulos {
+        flex-direction: column;
+    }
+    
+    .t1, .t2, .t3, .t4, .t5 {
+        position: static;
+        width: auto;
+        height: auto;
+        left: auto;
+        top: auto;
+        margin-bottom: 10px;
+    }
+    
+    .texto {
+        font-size: 3vw;
+    }
+    
+    .uno, .dos, .tres, .cuatro, .cinco {
+        position: static;
+        width: auto;
+        height: auto;
+        left: auto;
+        top: auto;
+        margin-bottom: 20px;
+    }
+}
 
 /* Estilos para Estudios */
 
@@ -581,3 +598,40 @@ li a:hover {
     position: absolute;
     bottom: 0;
 }
+
+
+/* Estilo para la pagina de contacto */
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    color: #FFFFFF;
+  }
+  
+  label {
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  input, textarea {
+    width: 100%;
+    margin-top: 5px;
+  }
+  
+  .form-button {
+    width: 100%;
+    margin-top: 10px;
+    color: #FFFFFF;
+    background-color: #0cb0b6;
+  }
