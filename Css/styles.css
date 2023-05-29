@@ -13,7 +13,7 @@ html {
 /* CONFIGURACION GLOBALES */
 
 
-/* Propiedades de la Navbar */
+/* Propiedades de la Navbar  y el footer*/
 .estilo{
     display: flex;
     list-style-type: none;
@@ -51,6 +51,16 @@ li a:hover {
 
 
 
+h1 a{
+    display: block;
+	color: #FFFFFF;
+	text-align: center;
+	text-decoration: none;
+}
+
+h1 a:hover{
+    background-color: #0cb0b6;
+}
 
 
 
@@ -308,13 +318,12 @@ li a:hover {
 }
 
 
-.años li::after {
+.años li:nth-child(1)::after{
     content: '';
     position: absolute;
-    width: calc(100% + 10rem);
+    width: calc(100% + 70rem);
     height: 2vh;
     background-color: #0cb0b6;
-    bottom: 50%;
     left: 7rem;
 }
 
@@ -323,7 +332,7 @@ li a:hover {
     width: 12vh;
     height: 12vh;
     left: 6vw;
-    top: 51vh;
+    top: 35vh;
 }
 
 .años li:nth-child(2){
@@ -331,7 +340,7 @@ li a:hover {
     width: 12vh;
     height: 12vh;
     left: 20vw;
-    top: 51vh;
+    top: 35vh;
 }
 
 .años li:nth-child(3){
@@ -339,7 +348,7 @@ li a:hover {
     width: 12vh;
     height: 12vh;
     left: 30vw;
-    top: 51vh;
+    top: 35vh;
 }
 
 .años li:nth-child(4){
@@ -347,7 +356,7 @@ li a:hover {
     width: 12vh;
     height: 12vh;
     left: 45vw;
-    top: 51vh;
+    top: 35vh;
 }
 
 .años li:nth-child(5){
@@ -355,7 +364,7 @@ li a:hover {
     width: 12vh;
     height: 12vh;
     left: 60vw;
-    top: 51vh;
+    top: 35vh;
 }
 
 .años li:nth-child(6){
@@ -363,7 +372,7 @@ li a:hover {
     width: 12vh;
     height: 12vh;
     left: 67vw;
-    top: 51vh;
+    top: 35vh;
 }
 
 .años li:nth-child(7){
@@ -371,7 +380,7 @@ li a:hover {
     width: 12vh;
     height: 12vh;
     left: 74vw;
-    top: 51vh;
+    top: 35vh;
 }
 
 
@@ -379,7 +388,7 @@ li a:hover {
     position: absolute;
     width: 43vh;
     height: 12vh;
-    left: 15vw;
+    left: 12vw;
     top: 20vh;
 }
 
@@ -395,8 +404,8 @@ li a:hover {
     position: absolute;
     width: 43vh;
     height: 12vh;
-    left: 65vw;
-    top: 40vh;
+    left: 67vw;
+    top: 60vh;
 }
 
 .p0 section:nth-child(4){
@@ -404,7 +413,7 @@ li a:hover {
     width: 43vh;
     height: 12vh;
     left: 25vw;
-    top: 40vh;
+    top: 65vh;
 }
 
 .p0 section:nth-child(5){
@@ -412,10 +421,49 @@ li a:hover {
     width: 43vh;
     height: 12vh;
     left: 35vw;
-    top: 50vh;
+    top: 55vh;
 }
 
+/* Lineas vertivales para las lineas de tiempo */
 
+.vertical{
+    width: 0.5rem;
+    height: 18rem;
+    background-color: #0cb0b6;
+
+}
+
+.año1{
+    position: relative;
+    left: 22vh;
+    top: 2vw;
+}
+
+.año2{
+    position: relative;
+    left: 54vh;
+    top: 2vw;
+}
+
+.año3{
+    position: relative;
+    left: 75vh;
+    top: 19vw;
+    height: 17rem;
+}
+
+.año4{
+    position: relative;
+    left: 140vh;
+    top: 2vw;
+}
+
+.año5{
+    position: relative;
+    left: 153vh;
+    top: 19vw;
+    height: 10rem;
+}
 
 /* Estilos de la pagina de experiencias */
 
@@ -426,10 +474,10 @@ li a:hover {
 
 .p1 section:nth-child(1){
     position: absolute;
-    width: 40vh;
+    width: 25vh;
     height: 6vh;
     left: 12vw;
-    top: 21vh;
+    top: 15vh;
 }
 
 .p1 section:nth-child(2){
@@ -437,7 +485,7 @@ li a:hover {
     width: 40vh;
     height: 6vh;
     left: 27vw;
-    top: 40vh;
+    top: 30vh;
 }
 
 .p1 section:nth-child(3){
@@ -445,7 +493,7 @@ li a:hover {
     width: 40vh;
     height: 6vh;
     left: 27vw;
-    top: 21vh;
+    top: 15vh;
 }
 
 .p1 section:nth-child(4){
@@ -453,7 +501,7 @@ li a:hover {
     width: 40vh;
     height: 6vh;
     left: 37vw;
-    top: 75vh;
+    top: 58vh;
 }
 
 .p1 section:nth-child(5){
@@ -461,7 +509,7 @@ li a:hover {
     width: 40vh;
     height: 6vh;
     left: 37vw;
-    top: 95vh;
+    top: 70vh;
 }
 
 .p1 section:nth-child(6){
@@ -469,7 +517,7 @@ li a:hover {
     width: 40vh;
     height: 6vh;
     left: 67vw;
-    top: 21vh;
+    top: 15vh;
 }
 
 .p1 section:nth-child(7){
@@ -477,7 +525,7 @@ li a:hover {
     width: 40vh;
     height: 6vh;
     left: 73vw;
-    top: 75vh;
+    top: 58vh;
 }
 
 /* Tamaño para los titulos de los texto en las paginas de experiencias y estudios */
@@ -597,6 +645,10 @@ li a:hover {
     height: 20vh;
     position: absolute;
     bottom: 0;
+}
+
+.margen{
+    margin: 2rem;
 }
 
 
