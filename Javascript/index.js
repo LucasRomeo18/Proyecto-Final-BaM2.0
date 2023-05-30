@@ -1,51 +1,31 @@
-// comentario de linea control mas corchete de cierre
+window.onload = function() {
+  var botones = document.getElementsByClassName("miBoton");
 
-// let variable2; //Declarada
+  for (var i = 0; i < botones.length; i++) {
+    var boton = botones[i];
+    var porcentaje = 0; // Porcentaje inicial
+    var porcentajeCirculo = boton.querySelector(".porcentaje-circulo");
+    var porcentajeBorde = boton.querySelector(".porcentaje-borde");
+    var porcentajeNumero = boton.querySelector(".porcentaje-numero");
 
-// const LENGUAJE = "JAVASCRIPT"; //inicializada
+    boton.addEventListener("click", function() {
+      if (porcentaje === 0) {
+        porcentaje = 80; // Porcentaje a mostrar
+        porcentajeCirculo.style.display = "block";
+        porcentajeNumero.style.display = "block";
+      } else {
+        porcentaje = 0;
+        porcentajeCirculo.style.display = "none";
+        porcentajeNumero.style.display = "none";
+      }
 
-// variable2 = 2;
+      // Establecer el tamaño del borde circular según el porcentaje
+      var circunferencia = 2 * Math.PI * porcentajeBorde.getAttribute("r");
+      var longitudDasharray = (100 - porcentaje) / 100 * circunferencia;
+      porcentajeBorde.style.strokeDasharray = longitudDasharray + " " + circunferencia;
 
-// let variable3 = "un texto";
-
-
-// console.log(variable3)
-
-
-const hamburger = document.querySelector(".menu")
-const navMenu = document.querySelector(".estilo")
-
-hamburger.addEventListener("click", () =>{
-  hamburger.classList.toggle("active");
-  navMenu.classList.toggle("active");
-})
-
-
-let nombre = "Lucas";
-let apellido = "Romeo";
-let edad = 33;
-let tieneMascota = "Si tiene";
-
-
-console.log("El nombre es "+nombre);
-console.log("El apellido es "+ apellido);
-console.log("La edad es "+ edad);
-console.log("Tiene mascota? " + tieneMascota);
-
-
-
-function showCircle(cx, cy, radius) {
-    let div = document.createElement('div');
-    div.style.width = 0;
-    div.style.height = 0;
-    div.style.left = cx + 'px';
-    div.style.top = cy + 'px';
-    div.className = 'circle';
-    document.body.append(div);
-
-    setTimeout(() => {
-      div.style.width = radius * 2 + 'px';
-      div.style.height = radius * 2 + 'px';
-    }, 0);
+      // Actualizar el texto del porcentaje
+      porcentajeNumero.textContent = porcentaje + "%";
+    });
   }
-
+};
