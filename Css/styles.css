@@ -80,44 +80,6 @@ h1 a:hover{
     background-color: #0A4D68;
 }
 
-/* Titulo Principal */
-
-.fondito{
-    height: 100%;
-    width: 100%;
-    position: absolute;
-}
-.nombre{
-    position: absolute;
-    width: auto;
-    left: 15%;
-    top: 10%;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 9vw;
-}
-
-.apellido{
-    position: absolute;
-    width: auto;
-    left: 15%;
-    top: 22%;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 16vw;
-}
-
-.titulo{
-    position: absolute;
-    width: auto;
-    left: 15.7%;
-    top: 57%;
-    font-style: italic;
-    font-weight: 400;
-    font-size: 4vw;
-}
-
-
 /* Estilos de la Pagina de Sobre Mi */
 
 /* Estilo de los titulos */
