@@ -13,7 +13,7 @@ html {
 /* CONFIGURACION GLOBALES */
 
 
-/* Propiedades de la Navbar */
+/* Propiedades de la Navbar  y el footer*/
 .estilo{
     display: flex;
     list-style-type: none;
@@ -51,6 +51,16 @@ li a:hover {
 
 
 
+h1 a{
+    display: block;
+	color: #FFFFFF;
+	text-align: center;
+	text-decoration: none;
+}
+
+h1 a:hover{
+    background-color: #0cb0b6;
+}
 
 
 
@@ -68,79 +78,6 @@ li a:hover {
     margin: 0;
     padding: 0;
     background-color: #0A4D68;
-}
-
-/* Titulo Principal */
-
-
-
-.nombre{
-    position: absolute;
-    width: auto;
-    left: 15%;
-    top: 10%;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 9vw;
-}
-
-.apellido{
-    position: absolute;
-    width: auto;
-    left: 15%;
-    top: 22%;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 16vw;
-}
-
-.titulo{
-    position: absolute;
-    width: auto;
-    left: 15.7%;
-    top: 57%;
-    font-style: italic;
-    font-weight: 400;
-    font-size: 4vw;
-}
-
-/* Para telefonos */
-
-@media screen and (max-width: 600px){
-    .apellido{
-        top: 13%;
-    }
-
-    .titulo{
-        top: 22%;
-    }
-    
-}
-
-/* Para tablets */
-
-@media screen and (max-width: 900px){
-    .apellido{
-        top: 15%;
-    }
-
-    .titulo{
-        top: 27%;
-    }
-    
-}
-
-/* Para tablets en modo horizontal */
-
-@media screen and (max-width: 1200px){
-    .apellido{
-        top: 18%;
-    }
-
-    .titulo{
-        top: 40%;
-    }
-    
 }
 
 /* Estilos de la Pagina de Sobre Mi */
@@ -287,198 +224,111 @@ li a:hover {
 
 /* Linea de tiempo para experiencias tambien */
 
-.años{
-    display: flex;
-    font-family: 'Montserrat';
-    font-weight: 600;
-    font-size: 4vh;
-
-}
-
-.años li{
+.timeline {
     position: relative;
-    float: left;
-    margin: 5rem;
-    background-color: #0cb0b6;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 1rem;
+    margin: 0 auto;
+    max-width: 1300px;
+  }
+  .timeline:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    border: 1px solid #FFFFFF;
+    right: 40px;
+    top: 0;
+  }
+  .timeline:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  @media screen and (min-width: 700px) {
+    .timeline {
+      padding: 2rem;
+    }
+    .timeline:before {
+      left: calc(50% - 1px);
+      right: auto;
+    }
+  }
+  
+  .timeline__item {
+    padding: 1rem;
+    border: 2px solid #FFFFFF;
+    border-image: #FFFFFF;
+    border-image-slice: 1;
+    position: relative;
+    margin: 1rem 3rem 1rem 1rem;
+    clear: both;
+  }
+  .timeline__item:after, .timeline__item:before {
+    content: "";
+    position: absolute;
+  }
+  .timeline__item:before {
+    right: -10px;
+    top: calc(50% - 5px);
+    border-style: solid;
+    border-color: #FFFFFF #FFFFFF transparent transparent;
+    border-width: 10px;
+    transform: rotate(45deg);
+  }
+  @media screen and (min-width: 700px) {
+    .timeline__item {
+      width: 44%;
+      margin: 1rem;
+    }
+    .timeline__item:nth-of-type(2n) {
+      float: right;
+      margin: 1rem;
+      border-image: #FFFFFF
+    }
+    .timeline__item:nth-of-type(2n):before {
+      right: auto;
+      left: -10px;
+      border-color: transparent transparent #FFFFFF #FFFFFF;
+    }
+  }
+  
+  .timeline__item--year {
     text-align: center;
-}
-
-
-.años li::after {
-    content: '';
-    position: absolute;
-    width: calc(100% + 10rem);
-    height: 2vh;
+    max-width: 150px;
+    margin: 0 48px 0 auto;
+    font-size: 2rem;
     background-color: #0cb0b6;
-    bottom: 50%;
-    left: 7rem;
-}
-
-.años li:nth-child(1){
-    position: absolute;
-    width: 12vh;
-    height: 12vh;
-    left: 6vw;
-    top: 51vh;
-}
-
-.años li:nth-child(2){
-    position: absolute;
-    width: 12vh;
-    height: 12vh;
-    left: 20vw;
-    top: 51vh;
-}
-
-.años li:nth-child(3){
-    position: absolute;
-    width: 12vh;
-    height: 12vh;
-    left: 30vw;
-    top: 51vh;
-}
-
-.años li:nth-child(4){
-    position: absolute;
-    width: 12vh;
-    height: 12vh;
-    left: 45vw;
-    top: 51vh;
-}
-
-.años li:nth-child(5){
-    position: absolute;
-    width: 12vh;
-    height: 12vh;
-    left: 60vw;
-    top: 51vh;
-}
-
-.años li:nth-child(6){
-    position: absolute;
-    width: 12vh;
-    height: 12vh;
-    left: 67vw;
-    top: 51vh;
-}
-
-.años li:nth-child(7){
-    position: absolute;
-    width: 12vh;
-    height: 12vh;
-    left: 74vw;
-    top: 51vh;
-}
-
-
-.p0 section:nth-child(1){
-    position: absolute;
-    width: 43vh;
-    height: 12vh;
-    left: 15vw;
-    top: 20vh;
-}
-
-.p0 section:nth-child(2){
-    position: absolute;
-    width: 43vh;
-    height: 12vh;
-    left: 50vw;
-    top: 20vh;
-}
-
-.p0 section:nth-child(3){
-    position: absolute;
-    width: 43vh;
-    height: 12vh;
-    left: 65vw;
-    top: 40vh;
-}
-
-.p0 section:nth-child(4){
-    position: absolute;
-    width: 43vh;
-    height: 12vh;
-    left: 25vw;
-    top: 40vh;
-}
-
-.p0 section:nth-child(5){
-    position: absolute;
-    width: 43vh;
-    height: 12vh;
-    left: 35vw;
-    top: 50vh;
-}
-
-
-
-/* Estilos de la pagina de experiencias */
-
-.p1{
-    display: flex;
-    float: left;
-}
-
-.p1 section:nth-child(1){
-    position: absolute;
-    width: 40vh;
-    height: 6vh;
-    left: 12vw;
-    top: 21vh;
-}
-
-.p1 section:nth-child(2){
-    position: absolute;
-    width: 40vh;
-    height: 6vh;
-    left: 27vw;
-    top: 40vh;
-}
-
-.p1 section:nth-child(3){
-    position: absolute;
-    width: 40vh;
-    height: 6vh;
-    left: 27vw;
-    top: 21vh;
-}
-
-.p1 section:nth-child(4){
-    position: absolute;
-    width: 40vh;
-    height: 6vh;
-    left: 37vw;
-    top: 75vh;
-}
-
-.p1 section:nth-child(5){
-    position: absolute;
-    width: 40vh;
-    height: 6vh;
-    left: 37vw;
-    top: 95vh;
-}
-
-.p1 section:nth-child(6){
-    position: absolute;
-    width: 40vh;
-    height: 6vh;
-    left: 67vw;
-    top: 21vh;
-}
-
-.p1 section:nth-child(7){
-    position: absolute;
-    width: 40vh;
-    height: 6vh;
-    left: 73vw;
-    top: 75vh;
-}
+    line-height: 1;
+    border-image: none;
+    padding: 0.5rem 1rem 1rem;
+  }
+  .timeline__item--year:before {
+    display: none;
+  }
+  @media screen and (min-width: 700px) {
+    .timeline__item--year {
+      text-align: center;
+      margin: 0 auto;
+    }
+    .timeline__item--year:nth-of-type(2n) {
+      float: none;
+      margin: 0 auto;
+      border-image: none;
+    }
+    .timeline__item--year:nth-of-type(2n):before {
+      display: none;
+    }
+  }
+  
+  .timeline__title {
+    margin: 0;
+    font-size: 1.5em;
+  }
+  
+  .timeline__blurb {
+    line-height: 1.5;
+    font-size: 1rem;
+    margin: 0.5rem 0 0;
+  }
 
 /* Tamaño para los titulos de los texto en las paginas de experiencias y estudios */
 
@@ -594,9 +444,13 @@ li a:hover {
     align-items: center;
     background: #0A4D68;
     width: 100%;
-    height: 20vh;
-    position: absolute;
+    height: 10vh;
+    position: relative;
     bottom: 0;
+}
+
+.margen{
+    margin: 2rem;
 }
 
 
@@ -634,4 +488,45 @@ li a:hover {
     margin-top: 10px;
     color: #FFFFFF;
     background-color: #0cb0b6;
+  }
+
+
+
+
+
+
+  /* Botones para pagina de habilidades */
+
+
+  .miBoton {
+    position: relative;
+    width: 100px; /* Ancho ajustado según el tamaño de la imagen */
+    height: 100px; /* Altura ajustada según el tamaño de la imagen */
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .porcentaje-circulo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    fill: none;
+    stroke-width: 2px;
+    transform: rotate(-90deg);
+  }
+  
+  .porcentaje-borde {
+    stroke: red;
+    stroke-dasharray: 0 100;
+    transition: stroke-dasharray 0.3s ease;
+  }
+  
+  .porcentaje-numero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    color: red;
+    display: none;
   }

@@ -5,18 +5,21 @@ html {
 }
 
 
-
+/*hereda las propiedades de su padre*/
 *, *:before, *:after {
-    box-sizing: inherit;  /*hereda las propiedades de su padre*/
+    box-sizing: inherit;  
 }
 
+
+/* Fondo Animado */
 .area{ 
     background: -webkit-linear-gradient(180deg, #0A4D68 0%, #0A4D68 0.01%, #096371 97.22%);
     width: 100%;
-    height: 80%;
-    position: absolute;
-    z-index: -1;
-    
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;    
 }
 
 .circles{
@@ -26,7 +29,6 @@ html {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    z-index: -1;
 }
 
 .circles li{
