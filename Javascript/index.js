@@ -1,3 +1,4 @@
+
 window.onload = function() {
   var botones = document.getElementsByClassName("miBoton");
 
