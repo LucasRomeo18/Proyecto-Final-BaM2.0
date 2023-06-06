@@ -1,0 +1,214 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;  /*1 rem = 10px*/ 
+
+}
+
+
+
+*, *:before, *:after {
+    box-sizing: inherit;  /*hereda las propiedades de su padre*/
+}
+
+/* Propiedades de la Navbar  y el footer*/
+.estilo{
+    display: flex;
+    list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+    background-color: #0A4D68;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2vw;
+    justify-content: center;
+}
+
+.estilo li{
+    float: left;
+    margin: 1rem;
+}
+
+li a{
+    display: block;
+	color: #FFFFFF;
+	text-align: center;
+	text-decoration: none;
+}
+
+li a:hover {
+    background-color: #0cb0b6;
+}
+
+.home{
+    font-style: normal;
+    font-weight: 600;
+}
+
+
+
+h1 a{
+    display: block;
+	color: #FFFFFF;
+	text-align: center;
+	text-decoration: none;
+}
+
+h1 a:hover{
+    background-color: #0cb0b6;
+}
+
+.redes{
+    display: flex;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    background: #0A4D68;
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    bottom: 0;
+    font-size: calc(4rem - 10px);
+}
+
+.margen{
+    margin: 2rem;
+}
+
+
+/* Tipografia general para todas las paginas */
+
+.estiloPrin{
+    font-family: 'Montserrat';
+    color: #FFFFFF;
+}
+
+
+
+/* Estilo para la pagina de habilidades */
+
+.listaItems{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.listaItems li {
+    margin-right: 10rem;
+    margin-bottom: 10rem;
+    margin-top: 10rem;
+    flex-basis: 12%;
+}
+
+.boton{
+    padding: 0;
+    margin: 0;
+    border-radius: 20%;
+    background-color: #0A4D68;
+
+}
+
+.porcentaje {
+    margin-top: 1rem; /* Ajusta el valor del margen superior según sea necesario */
+    font-size: 3rem;
+    background-color: #0cb0b6;
+    width: 30%;
+}
+
+/* .posicion li:nth-child(1){
+    position: absolute;
+    left: 14.23%;
+    right: 82.7%;
+    top: 24.09%;
+    bottom: 70.45%;
+}
+
+.posicion li:nth-child(2){
+    position: absolute;
+    left: 31.37%;
+    right: 65.56%;
+    top: 23.85%;
+    bottom: 70.69%;
+}
+
+.posicion li:nth-child(3){
+    position: absolute;
+    left: 48.78%;
+    right: 48.15%;
+    top: 23.49%;
+    bottom: 71.05%;
+}
+
+.posicion li:nth-child(4){
+    position: absolute;
+    left: 66.06%;
+    right: 30.87%;
+    top: 23.49%;
+    bottom: 71.05%;
+}
+
+.posicion li:nth-child(5){
+    position: absolute;
+    left: 83.33%;
+    right: 13.6%;
+    top: 22.76%;
+    bottom: 71.78%;
+}
+
+.posicion li:nth-child(6){
+    position: absolute;
+    left: 14.23%;
+    right: 82.7%;
+    top: 50.59%;
+    bottom: 43.95%;
+}
+
+.posicion li:nth-child(7){
+    position: absolute;
+    left: 31%;
+    right: 82.7%;
+    top: 50.59%;
+    bottom: 43.95%;
+}
+
+.posicion li:nth-child(8){
+    position: absolute;
+    left: 48.5%;
+    right: 82.7%;
+    top: 50.59%;
+    bottom: 43.95%;
+}
+
+.posicion li:nth-child(9){
+    position: absolute;
+    left: 66%;
+    right: 82.7%;
+    top: 50.59%;
+    bottom: 43.95%;
+}
+
+.posicion li:nth-child(10){
+    position: absolute;
+    left: 83.5%;
+    right: 82.7%;
+    top: 50.59%;
+    bottom: 43.95%;
+}
+
+.boton{
+    padding: 0;
+    margin: 0;
+    border-radius: 20%;
+    background-color: #0A4D68;
+
+} */
+
+
+/* Botones para pagina de habilidades */
+
+
+
