@@ -46,6 +46,8 @@ li a:hover {
     font-weight: 600;
 }
 
+
+
 h1 a{
     display: block;
 	color: #FFFFFF;
@@ -64,129 +66,48 @@ h1 a:hover{
     align-items: center;
     background: #0A4D68;
     width: 100%;
-    height: 12vh;
+    height: 10vh;
     position: fixed;
     bottom: 0;
+    font-size: calc(4rem - 10px);
 }
 
 .margen{
     margin: 2rem;
 }
 
+
+/* Tipografia general para todas las paginas */
+
+.estiloPrin{
+    font-family: 'Montserrat';
+    color: #FFFFFF;
+}
+
+
+
 /* Estilo para la pagina de habilidades */
 
-.position {
+.listaItems{
     display: flex;
-    float: left;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    
 }
 
-/* .posicion li:nth-child(1){
-    position: absolute;
-    left: 14.23%;
-    right: 82.7%;
-    top: 24.09%;
-    bottom: 70.45%;
+.listaItems li {
+    margin-right: 10rem;
+    margin-bottom: 10rem;
+    margin-top: 10rem;
+    flex-basis: 12%;
 }
 
-.posicion li:nth-child(2){
-    position: absolute;
-    left: 31.37%;
-    right: 65.56%;
-    top: 23.85%;
-    bottom: 70.69%;
-}
-
-.posicion li:nth-child(3){
-    position: absolute;
-    left: 48.78%;
-    right: 48.15%;
-    top: 23.49%;
-    bottom: 71.05%;
-}
-
-.posicion li:nth-child(4){
-    position: absolute;
-    left: 66.06%;
-    right: 30.87%;
-    top: 23.49%;
-    bottom: 71.05%;
-}
-
-.posicion li:nth-child(5){
-    position: absolute;
-    left: 83.33%;
-    right: 13.6%;
-    top: 22.76%;
-    bottom: 71.78%;
-}
-
-.posicion li:nth-child(6){
-    position: absolute;
-    left: 14.23%;
-    right: 82.7%;
-    top: 50.59%;
-    bottom: 43.95%;
-}
-
-.posicion li:nth-child(7){
-    position: absolute;
-    left: 31%;
-    right: 82.7%;
-    top: 50.59%;
-    bottom: 43.95%;
-}
-
-.posicion li:nth-child(8){
-    position: absolute;
-    left: 48.5%;
-    right: 82.7%;
-    top: 50.59%;
-    bottom: 43.95%;
-}
-
-.posicion li:nth-child(9){
-    position: absolute;
-    left: 66%;
-    right: 82.7%;
-    top: 50.59%;
-    bottom: 43.95%;
-}
-
-.posicion li:nth-child(10){
-    position: absolute;
-    left: 83.5%;
-    right: 82.7%;
-    top: 50.59%;
-    bottom: 43.95%;
-}
-
-<<<<<<< HEAD
-
-=======
->>>>>>> a1669c0c1910a1a0baae460c6bf754c14e1f9d36
 .boton{
     padding: 0;
     margin: 0;
     border-radius: 20%;
     background-color: #0A4D68;
 
-} */
-
-
-
-/* Porcentajes para las imagenes */
-
-/* .posicion li {
-    position: relative; 
 }
-
-.porcentaje {
-    display: none;
-    position: absolute;
-    bottom: -50px; 
-    left: 80%; 
-    transform: translateX(-50%); 
-    color: white; 
-} */
-
-

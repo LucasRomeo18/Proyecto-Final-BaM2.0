@@ -86,144 +86,66 @@ h1 a:hover{
 
 /*  Estilos de la Pagina de Sobre Mi */
 
-/* Estilo de los titulos */
-.titulos{
-    font-style: normal;
-    font-weight: 600;
+.contenedor{
     display: flex;
-    float: left;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    margin-left: 10%;
 }
 
-.t1{
-    position: absolute;
-    width: auto;
-    height: 48px;
-    left: 20vh;
-    top: 18vh;
+.contenedorItem{
+    margin-right: 50px;
+    flex-basis: 25%;
 }
-
-.t2{
-    position: absolute;
-    width: auto;
-    height: 48px;
-    left: 82vh;
-    top: 18vh;
-
+.contenedorItem3{
+    margin-right: 50px;
+    flex-basis: 25%;
 }
-
-.t3{
-    position: absolute;
-    width: auto;
-    height: 48px;
-    left: 140vh;
-    top: 18vh;
-}
-
-.t4{
-    position: absolute;
-    width: auto;
-    height: 48px;
-    left: 82vh;
-    top: 59vh;
-
-}
-
-.t5{
-    position: absolute;
-    width: auto;
-    height: 48px;
-    left: 140vh;
-    top: 59vh;
-}
-
-/* Estilos de los textos */
-.texto{
-    font-style: italic;
-    font-weight: 300;
-    font-size: 1vw;
-    overflow: hidden;
-}
-
-.uno{
-    position: absolute;
-    width: 300px;
-    height: 250px;
-    left: 18vh;
-    top: 26vh;
-}
-
-.dos{
-    position: absolute;
-    width: 300px;
-    height: 200px;
-    left: 77vh;
-    top: 26vh;
-}
-
-.tres{
-    position: absolute;
-    width: 300px;
-    height: 200px;
-    left: 140vh;
-    top: 26vh;
-}
-
-.cuatro{
-    position: absolute;
-    width: 300px;
-    height: 200px;
-    left: 77vh;
-    top: 67vh;
-}
-
-.cinco{
-    position: absolute;
-    width: 300px;
-    height: 200px;
-    left: 140vh;
-    top: 67vh;
-}
-
-.listaFondo{
-    list-style-type: none;
-    display: flex;
-    float: left;
-    margin: 2;
-    padding: 2;
-
-}
-
-.sobremi{
-    width: auto;
-    height: 100%;
+.parrafo{
+    width: 50%;
 }
 
 
-/* Estilos responsivos */
-@media screen and (max-width: 768px) {
-    .titulos {
-        flex-direction: column;
+/* Estilos responsivos para la pagina Sobre Mi */
+
+@media screen and (max-width: 400px){
+    .contenedorItem{
+        flex-basis: 60%;
     }
-    
-    .t1, .t2, .t3, .t4, .t5 {
-        position: static;
-        width: auto;
-        height: auto;
-        left: auto;
-        top: auto;
-        margin-bottom: 10px;
+    .parrafo{
+        width: 100%;
     }
-    
-    .texto {
-        font-size: 3vw;
+}
+
+@media screen and (min-width: 400px) and (max-width: 599px){
+    .contenedorItem{
+        flex-basis: 40%;
     }
-    
-    .uno, .dos, .tres, .cuatro, .cinco {
-        position: static;
-        width: auto;
-        height: auto;
-        left: auto;
-        top: auto;
-        margin-bottom: 20px;
+    .parrafo{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 799px){
+    .contenedorItem{
+        flex-basis: 40%;
+    }
+    .parrafo{
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .parrafo{
+        width: 100%;
+    }
+    .redes{
+        height: 12vh;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    .parrafo{
+        width: 70%;
     }
 }
