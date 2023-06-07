@@ -67,10 +67,11 @@ h1 a:hover{
     height: 12vh;
     position: relative;
     bottom: 0;
+    font-size: calc(4rem - 10px);
 }
 
 .margen{
-    margin: 2rem;
+  margin: 2rem;
 }
 
 /* Tipografia y color principal */

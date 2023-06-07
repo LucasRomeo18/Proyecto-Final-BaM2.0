@@ -135,6 +135,7 @@ h1 a:hover{
     height: 12vh;
     position: fixed;
     bottom: 0;
+    font-size: calc(4rem - 10px);
 }
 
 .margen{

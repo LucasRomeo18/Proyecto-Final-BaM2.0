@@ -11,21 +11,98 @@ html {
 }
 
 /* Propiedades de la Navbar  y el footer*/
-.estilo{
-    display: flex;
-    list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
+header{
     background-color: #0A4D68;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 300;
-    font-size: 2vw;
-    justify-content: center;
 }
 
-.estilo li{
+li{
+    list-style: none;
+}
+
+a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.navbar{
+    min-height: 5vw;
+    display: flex;
+	margin: 0;
+	padding: 0 24px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navMenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.navHome{
+    font-weight: 600;
+    font-size: calc(3rem - 10px);
+}
+
+li a:hover {
+    background-color: #0cb0b6;
+}
+
+.navItem{
+    font-size: calc(2.5rem - 10px);
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #FFFFFF;
+}
+
+@media (max-width: 768px) {
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);        
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);        
+    }
+    .navMenu{
+        position: fixed;
+        left: -100%;
+        top: 5vw;
+        gap: 0;
+        flex-direction: column;
+        background-color: #0A4D68;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .navItem{
+        margin: 16px 0;
+    }
+    .navMenu.active{
+        left: 0;
+    }
+}
+/* .estilo li{
     float: left;
     margin: 1rem;
 }
@@ -55,7 +132,7 @@ h1 a{
 
 h1 a:hover{
     background-color: #0cb0b6;
-}
+} */
 
 .redes{
     display: flex;
@@ -91,29 +168,31 @@ h1 a:hover{
     align-items: center;
     justify-content: center;
     height: 100vh;
-  }
+    font-size: calc(2.5rem - 10px);
+}
   
-  form {
+form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 300px;
+    width: 400px;
     color: #FFFFFF;
-  }
+}
   
-  label {
+label {
     margin-top: 10px;
     width: 100%;
-  }
+}
   
-  input, textarea {
-    width: 100%;
-    margin-top: 5px;
-  }
-  
-  .form-button {
+input, textarea {
     width: 100%;
     margin-top: 10px;
+}
+  
+.form-button {
+    width: 100%;
+    margin-top: 15px;
     color: #FFFFFF;
     background-color: #0cb0b6;
-  }
+    font-size: calc(2.5rem - 10px);
+}
