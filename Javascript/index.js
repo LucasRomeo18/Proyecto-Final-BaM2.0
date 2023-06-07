@@ -17,3 +17,45 @@ function confirmacion() {
       alert("El envío del formulario ha sido cancelado.");
     }
   }
+
+  // Funciones para mostrar con una alerta el conocimiento que poseo en cada programa
+
+  function psAlerta(){
+    alert("Mi conocimiento de Photoshop es de 80%")
+  }
+
+  function ilAlerta(){
+    alert("Mi conocimiento de Photoshop es de 80%")
+  }
+
+  function aeAlerta(){
+    alert("Mi conocimiento de Photoshop es de 80%")
+  }
+
+  function idAlerta(){
+    alert("Mi conocimiento de Photoshop es de 80%")
+  }
+
+  function xdAlerta(){
+    alert("Mi conocimiento de Photoshop es de 80%")
+  }
+
+  function prAlerta(){
+    alert("Mi conocimiento de Photoshop es de 80%")
+  }
+
+  function figmaAlerta(){
+    alert("Mi conocimiento de Photoshop es de 80%")
+  }
+
+  function htmlAlerta(){
+    alert("Mi conocimiento de Photoshop es de 80%")
+  }
+
+  function cssAlerta(){
+    alert("Mi conocimiento de Photoshop es de 80%")
+  }
+
+  function jsAlerta(){
+    alert("Mi conocimiento de Photoshop es de 80%")
+  }

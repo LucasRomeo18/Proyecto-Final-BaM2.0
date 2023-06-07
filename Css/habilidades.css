@@ -112,12 +112,6 @@ h1 a:hover{
 
 }
 
-.porcentaje {
-    margin-top: 1rem; /* Ajusta el valor del margen superior según sea necesario */
-    font-size: 3rem;
-    background-color: #0cb0b6;
-    width: 30%;
-}
 
 /* .posicion li:nth-child(1){
     position: absolute;
