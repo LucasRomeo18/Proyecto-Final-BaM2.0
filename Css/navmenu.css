@@ -6,6 +6,9 @@
 
 }
 
+.p{
+    color: black;
+}
 /* Propiedades de la Navbar  y el footer*/
 header{
     background-color: #0A4D68;
@@ -51,7 +54,7 @@ a{
     background-color: #0cb0b6;
 }
 
-.navItem{
+.nav-item{
     font-size: calc(2.5rem - 10px);
 }
 
@@ -74,13 +77,13 @@ a{
     .hamburger{
         display: block;
     }
-    .hamburger.active .bar:nth-child(2){
+    .hamburger.active.bar:nth-child(2){
         opacity: 0;
     }
-    .hamburger.active .bar:nth-child(1){
+    .hamburger.active.bar:nth-child(1){
         transform: translateY(8px) rotate(45deg);        
     }
-    .hamburger.active .bar:nth-child(3){
+    .hamburger.active.bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);        
     }
     .nav-menu{
