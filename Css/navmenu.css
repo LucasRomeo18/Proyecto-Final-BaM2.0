@@ -1,12 +1,12 @@
 *{
     box-sizing: border-box;
-    font-size: 62.5%;  /*1 rem = 10px*/ 
+    font-size: 62.5%; 
     padding: 0;
     margin: 0;
 
 }
 
-/* Propiedades de la Navbar  y el footer*/
+/* Propiedades de la Navbar */
 header{
     background-color: #0A4D68;
     font-family: 'Montserrat';
@@ -51,7 +51,7 @@ a{
     background-color: #0cb0b6;
 }
 
-.navItem{
+.nav-item{
     font-size: calc(2.5rem - 10px);
 }
 
