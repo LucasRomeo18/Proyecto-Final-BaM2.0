@@ -1,10 +1,13 @@
 # Proyecto-Final-BaM2.0
 
+## Mi Curriculum Vitae
 
-https://codepen.io/j471n/pen/vYJaLvm
+Me llamo Lucas Daniel Romeo, soy Diseñador Gráfico y como parte de mi proyecto hice mi curriculum en forma de web 
 
+## Primera version
 
-https://codepen.io/keithwyland/pen/wqNqvy
+En esta primera version  mi objetivo fue integrar los conceptos aprendidos en el curso
 
+## Futuras versiones
 
-https://makemychance.com/horizontal-timeline-css-responsive/
+En versiones futuras, se va a agregar una seccion de porfolio con los trabajos realizados y major inegracion con javascript.
